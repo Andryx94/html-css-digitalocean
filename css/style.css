@@ -1,0 +1,183 @@
+/* Generali */
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
+
+
+
+/* .clearfix:after {
+   content: "";
+   display: table;
+   clear: both;
+ } */
+
+body {
+font-family: 'Roboto', sans-serif;
+padding-top: 60px;
+font-weight: 700;
+}
+
+h2 {
+  margin-top: 10px;
+}
+
+.container {
+  max-width: 1400px;
+}
+
+.ms_centrato {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.ms_primary-color {
+  color: #2485fd;
+}
+
+.ms_secondary-color {
+  color: white;
+}
+/* fine generali */
+
+/* HEADER */
+/* navbar */
+header .ms_navbar {
+  height: 60px;
+  background-color: white;
+}
+
+header .ms_navbar i {
+  font-size: 17px;
+}
+
+header .ms_navbar img {
+  max-width: 200px;
+}
+
+header .ms_navbar .container > div {
+  line-height: 60px;
+}
+
+header .ms_navbar .container a {
+  font-size: 17px;
+  color: black;
+}
+
+
+header .ms_navbar .container button {
+  color: #2485fd;
+  border-color: #2485fd;
+  font-weight: 700;
+}
+
+/* jumbotron */
+header .ms_jumbotron {
+  background-image: url(../img/jumbotron/background.jpg);
+  background-size: cover;
+  padding: 70px 0;
+  margin-bottom: 0;
+}
+
+header .ms_jumbotron .container .ms_secondary-color {
+  padding-right: 40px;
+}
+
+header .ms_jumbotron .container .ms_secondary-color p {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+header .ms_jumbotron .container .ms_form {
+  background-color: white;
+  border-radius: 5px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+header .ms_jumbotron .container .ms_form button{
+  position: relative;
+  width: 100%;
+  margin-bottom: 5px;
+  font-weight: 700;
+  border: 1px solid rgba(227, 227, 227, 0.3);
+  box-shadow: 1px 1px rgba(0,0,0,0.2);
+}
+
+header .ms_jumbotron .container .ms_form button img{
+  position: absolute;
+  height: 20px;
+  padding-left: 10px;
+  left: 0%;
+}
+
+header .ms_jumbotron .container .ms_form p{
+  padding-top: 10px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+header .ms_jumbotron .container .ms_form a{
+  text-decoration: underline;
+}
+
+header .ms_jumbotron .container .ms_form .ms_secondary-color{
+  background-color: #2485fd;
+}
+
+header .ms_jumbotron .container .ms_form .form-group{
+  background-color: white;
+  box-shadow: none;
+  border-radius: 5px;
+}
+
+header .ms_jumbotron .container .ms_form .form-group input{
+  border: 1px solid rgba(227, 227, 227, 0.3);
+}
+
+/* header loghi */
+header .header-loghi {
+  background-color: #f3f5f9;
+  padding: 30px 0;
+  font-size: 17px;
+}
+
+header .header-loghi .container p {
+ text-transform: uppercase;
+}
+
+header .header-loghi .container .row > div {
+  position: relative;
+  height: 120px;
+}
+
+header .header-loghi .row {
+  margin-bottom: 10px;
+}
+
+header .header-loghi .row img {
+  max-width: 90%;
+  max-height: 90%;
+}
+
+header .header-loghi .row #splunk {
+  padding: 20px 0
+}
+/* fine header */
+
+/* versione mobile */
+@media all and (max-width: 767px) {
+}
+/* fine versione mobile */
+
+/* versione tablet */
+@media all and (min-width: 768px) and (max-width:991px){
+}
+/* fine versione tablet  */
+
+/* versione desktop */
+@media all and (min-width: 992px){
+}
+/* fine versione desktop */
