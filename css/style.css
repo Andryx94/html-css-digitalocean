@@ -1,18 +1,4 @@
 /* Generali */
-/* * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-} */
-
-
-
-/* .clearfix:after {
-   content: "";
-   display: table;
-   clear: both;
- } */
-
 body {
 font-family: 'Roboto', sans-serif;
 padding-top: 60px;
@@ -53,24 +39,24 @@ li {
   transform: translate(-50%, -50%);
 }
 
-.fa-circle {
-  color: #2485fd;
-}
-
-#ms_arrow-left {
-  left: 90%;
-}
-
-#ms_arrow-right {
-  left: 10%;
-}
-
 .ms_primary-color {
   color: #2485fd;
 }
 
 .ms_secondary-color {
   color: white;
+}
+
+.fa-circle {
+  color: #2485fd;
+}
+
+.ms_arrow-left {
+  left: 85%;
+}
+
+.ms_arrow-right {
+  left: 15%;
 }
 /* fine generali */
 
@@ -100,6 +86,7 @@ header .ms_navbar .container > div {
 header .ms_navbar .container a {
   font-size: 17px;
   color: black;
+  font-weight: 700;
 }
 
 
@@ -246,17 +233,12 @@ main .main-configuration .container .configuration-section > div {
   min-height: 200px;
 }
 
-/* designed */
+/* designed (CLASSI IN COMUNE CON DEVELOPMENT) */
 main .main-designed {
   background-color: #f3f5f9;
 }
 
-main .main-designed img{
-  width: 100%;
-  height: 500px;
-}
-
-main .main-designed i {
+main .main-designed .container i {
   font-size: 40px;
 }
 
@@ -274,6 +256,15 @@ main .main-designed .container .row > div{
   height: 500px;
 }
 
+main .main-designed .container .row .col-xs-8{
+  padding: 0;
+}
+
+main .main-designed .container .row .col-xs-8 #ms_droplet-img{
+  width: 100%;
+  height: 500px;
+}
+
 main .main-designed .container .list-inline > li{
   padding: 0;
 }
@@ -287,10 +278,112 @@ main .main-feature p, main .main-feature a {
 main .main-feature .container .feature-section > div {
   padding-bottom: 20px;
 }
+
+/* service */
+main .main-service {
+  background: linear-gradient(0deg, rgba(0,30,154,1) 0%, rgba(0,71,197,1) 100%);
+}
+
+main .main-service p {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 16px
+}
+
+main .main-service a {
+  color: #00d7d2;
+  font-size: 16px;
+}
+
+main .main-service .container .col-xs-12 {
+  width: 48%
+}
+
+main .main-service .container #ms_service-right {
+  margin-left: 4%;
+}
+
+main .main-service .container .col-xs-12 .row {
+  border-bottom: 1px solid white;
+  margin-top: 10px;
+}
+
+main .main-service .container .col-xs-12 .row .col-xs-2 {
+  text-transform: uppercase;
+}
+
+main .main-service .container .col-xs-12 .row .col-xs-2 p {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+main .main-service .container .col-xs-4 {
+  text-align: right;
+}
+
+/* development (CLASSI IN COMUNE CON DESIGNED) */
+main .main-development img {
+  padding-bottom: 30px;
+}
+
+main .main-development p {
+  font-size: 30px;
+}
+
+main .main-development a {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+main .main-development #ms_rick-name {
+  font-size: 20px;
+  color: black;
+  margin-bottom: 0;
+}
+
+main .main-development #ms_rick-role {
+  font-size: 18px;
+  color: black;
+  padding-bottom: 30px;
+}
+
+main .main-development .container #ms_develop-box {
+  background-color: white;
+}
+
+main .main-development .container #ms_develop-box .row .col-xs-12  {
+  padding-top: 50px;
+}
+
+main .main-development .container #ms_develop-box .row .col-xs-12 img {
+  height: 80px;
+}
+
+main .main-designed .container .row .col-xs-8{
+  padding: 0;
+}
+
+main .main-designed .container .row .col-xs-8 {
+  height: 500px;
+}
+
+/* started */
+main .main-started {
+  background: linear-gradient(0deg, rgba(0,30,154,1) 0%, rgba(0,71,197,1) 100%);
+}
+
+main .main-started button {
+  color: #2485fd;
+  font-weight: 700;
+  font-size: 20px;
+  padding: 10px 15px;
+}
 /* fine main */
 
 /* versione mobile */
 @media all and (max-width: 767px) {
+  .ms_arrow-left, ms_arrow-right {
+    display: none;
+  }
+
   main .main-configuration .container .configuration-section [class*="col-"] {
     margin-top: 20px;
   }
@@ -299,44 +392,57 @@ main .main-feature .container .feature-section > div {
     min-height: 0;
   }
 
-  main .main-designed img{
+  main .main-designed .container .row .col-xs-8 #ms_droplet-img{
     width: 100%;
     height: 300px;
   }
 
-  main .main-designed .container .row > div{
+  main .main-designed .container #ms_designed-row > div{
     height: 300px;
+  }
+
+  main .main-service .container .col-xs-12 {
+    width: 100%
+  }
+
+  main .main-service .container #ms_service-right {
+    margin-left: 0%;
+    padding-top: 40px;
   }
 }
 /* fine versione mobile */
 
 /* versione mobile xl */
 @media all and (min-width: 768px) and (max-width:991px){
-  main .main-designed img{
+  main .main-designed .container .row .col-xs-8 #ms_droplet-img{
     width: 100%;
     height: 350px;
   }
 
-  main .main-designed .container .row > div{
+  main .main-designed .container #ms_designed-row > div{
     height: 350px;
+  }
+
+  main .main-service .container .col-xs-12 {
+    width: 100%
+  }
+
+  main .main-service .container #ms_service-right {
+    margin-left: 0%;
+    padding-top: 40px;
   }
 }
 /* fine versione mobile xl  */
 
 /* versione tablet */
 @media all and (min-width: 992px) and (max-width:1199px){
-  main .main-designed img{
+  main .main-designed .container .row .col-xs-8 #ms_droplet-img{
     width: 100%;
     height: 400px;
   }
 
-  main .main-designed .container .row > div{
+  main .main-designed .container #ms_designed-row > div{
     height: 400px;
   }
 }
 /* fine versione tablet  */
-
-/* versione desktop */
-@media all and (min-width: 992px){
-}
-/* fine versione desktop */
