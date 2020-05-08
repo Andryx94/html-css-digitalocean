@@ -28,7 +28,7 @@ li {
   list-style-type: none;
 }
 
-.container {
+.ms_container {
   max-width: 1400px;
 }
 
@@ -195,7 +195,7 @@ main h2 {
   padding-bottom: 20px;
 }
 
-main .container {
+main .ms_container {
   padding: 70px 0;
 }
 
@@ -375,17 +375,47 @@ footer {
   color: white;
 }
 
-footer a{
-  color: rgba(255, 255, 255, 0.6);
+footer p {
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: rgba(255, 255, 255, 0.3)
 }
 
-footer .container {
-  padding-top: 70px;
+footer a {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 18px;
 }
+
+footer i {
+  font-size: 25px;
+}
+
+footer ul {
+  padding-left: 0;
+}
+
+footer li {
+  padding-bottom: 10px;
+}
+
+footer #copyright {
+  padding-top: 10px;
+  margin-bottom: 0px;
+  color: rgba(255, 255, 255, 0.6)
+}
+
+footer .ms_container {
+  padding: 70px 0;
+}
+
 /* fine footer */
 
 /* versione mobile */
 @media all and (max-width: 767px) {
+  header .header-loghi img {
+    width: 70%;
+  }
+
   header .header-loghi .container ul li {
     width: calc((100%/2) - 50px);
   }
