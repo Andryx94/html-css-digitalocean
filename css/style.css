@@ -89,7 +89,6 @@ header .ms_navbar .container a {
   font-weight: 700;
 }
 
-
 header .ms_navbar .container button {
   color: #2485fd;
   border-color: #2485fd;
@@ -196,7 +195,8 @@ main h2 {
 }
 
 main .ms_container {
-  padding: 70px 0;
+  padding-top: 70px;
+  padding-bottom: 70px;
 }
 
 /* configuration */
@@ -405,13 +405,18 @@ footer #copyright {
 }
 
 footer .ms_container {
-  padding: 70px 0;
+  padding-top: 70px;
+  padding-bottom: 70px;
 }
-
 /* fine footer */
 
 /* versione mobile */
-@media all and (max-width: 767px) {
+@media all and (max-width: 768px) {
+  .fa-chevron-left:before, .fa-chevron-right:before {
+    display: none;
+  }
+
+  /* HEADER */
   header .header-loghi img {
     width: 70%;
   }
@@ -420,10 +425,8 @@ footer .ms_container {
     width: calc((100%/2) - 50px);
   }
 
-  .fa-chevron-left:before, .fa-chevron-right:before {
-    display: none;
-  }
-
+  /* MAIN */
+  /* configuration */
   main .main-configuration .container .configuration-section [class*="col-"] {
     margin-top: 20px;
   }
@@ -432,6 +435,7 @@ footer .ms_container {
     min-height: 0;
   }
 
+  /* designed */
   main .main-designed .container .row .col-xs-8 #ms_droplet-img{
     width: 100%;
     height: 300px;
@@ -441,6 +445,7 @@ footer .ms_container {
     height: 300px;
   }
 
+  /* service */
   main .main-service .container .col-xs-12 {
     width: 100%
   }
@@ -449,6 +454,7 @@ footer .ms_container {
     margin-left: 0%;
     padding-top: 40px;
   }
+  /* development */
 
   main .main-development p {
     font-size: 20px;
@@ -460,11 +466,13 @@ footer .ms_container {
 /* fine versione mobile */
 
 /* versione mobile xl */
-@media all and (min-width: 768px) and (max-width:991px){
+@media all and (min-width: 768px) and (max-width:992px){
   .fa-chevron-left:before, .fa-chevron-right:before {
     display: none;
   }
 
+  /* MAIN */
+  /* designed */
   main .main-designed .container .row .col-xs-8 #ms_droplet-img{
     width: 100%;
     height: 350px;
@@ -474,6 +482,7 @@ footer .ms_container {
     height: 350px;
   }
 
+  /* service */
   main .main-service .container .col-xs-12 {
     width: 100%
   }
@@ -486,11 +495,13 @@ footer .ms_container {
 /* fine versione mobile xl  */
 
 /* versione tablet */
-@media all and (min-width: 992px) and (max-width:1199px){
+@media all and (min-width: 992px) and (max-width:1200px){
   .fa-chevron-left:before, .fa-chevron-right:before {
     display: none;
   }
 
+  /* MAIN */
+  /* designed */
   main .main-designed .container .row .col-xs-8 #ms_droplet-img{
     width: 100%;
     height: 400px;
